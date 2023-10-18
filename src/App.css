@@ -1,0 +1,152 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbar{
+  background-color: black;
+  color: white;
+}
+.nav-links{
+  display: flex;
+  justify-content: flex-end;
+list-style: none;
+width: 75%;
+}
+
+.home, .about, .blog, .contact, .register{
+  
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: all 0.4s;
+}
+
+.home:hover, .about:hover, .blog:hover, .contact:hover, .register:hover{
+  color: #282c34;
+  background-color: #fff;
+  transition: all 1.5 ease;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+h1, h2{
+  margin-left: 15px;
+}
+.div{
+  margin-left: 15px;
+}
+input{
+  padding: .1rem;
+}
+
+.logo{
+  position: relative;
+  left: 5px;
+  font-size: larger;
+  font-weight: 800;
+}
+.nav-links{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width:400px) {
+  .navbar{
+    height: 15vh;
+  }
+  .nav-links{
+    display: block;
+    position: relative;
+    top: 13px;
+    left: 100px;
+    justify-content: center;
+
+  }
+}
+@media (max-width:500px) {
+  .navbar{
+    height: 49vh;
+    width: 100vh;
+    font-size: large;
+  }
+  .nav-links{
+    display: block;
+    position: relative;
+    top: 13px;
+    left: 175px;
+    justify-content: center;
+
+  }
+  .subBtn{
+    position: relative;
+    left: -46px;
+    padding: .4rem;
+    font-size: medium;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: chocolate;
+    color: whitesmoke;
+  }
+}
+
+.regForm{
+  position: relative;
+  top: 20px;
+  left: 20px ;
+}
+.subBtn{
+  position: relative;
+  left: 200px;  
+  border-radius: 20px;
+  padding: .6rem;
+  font-size: medium;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: chocolate;
+  color: whitesmoke;
+}
+.subBtn:hover{
+  border: 1px solid black;
+}
+.regForm input{
+  position: relative;
+  left: 5px;
+}
